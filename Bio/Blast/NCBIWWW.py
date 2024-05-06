@@ -299,7 +299,12 @@ def qblast(
         status = results[i + len("Status=") : j].strip()
         if status.upper() == "READY":
             break
-    return StringIO(results)
+    return dict(
+        result=StringIO(results), 
+        rid=rid,
+        rtoe=rtoe,
+        elapsed=elapsed,
+    )
 
 
 qblast.previous = 0
