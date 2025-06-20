@@ -8,6 +8,8 @@
 # Patched by Brad Chapman.
 # Chris Wroe added modifications for work in myGrid
 
+print(f"** KAMURANI MODIFIED VERSION")
+
 """Code to invoke the NCBI BLAST server over the internet.
 
 This module provides code to work with the WWW version of BLAST
